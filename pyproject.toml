@@ -1,0 +1,17 @@
+[project]
+name = "eye-or"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "openai>=1.60.2",
+    "python-dotenv>=1.0.1",
+    "requests>=2.32.3",
+    "ruff>=0.9.3",
+]
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "C", "N", "Q"]
+ignore = ["E203", "W503"]
