@@ -72,7 +72,7 @@ def main():
 
     # Build dependency graph
     files = file_getter.get_file_paths()
-    dep_graph = DependencyGraph(files)
+    dep_graph = DependencyGraph(files, args.repo_path)
 
     # Compute common prefix to trim from module paths
     common_prefix = get_common_module_prefix(list(dep_graph.graph.keys()))
